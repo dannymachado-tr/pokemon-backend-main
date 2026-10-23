@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "env": { "node": true, "es2022": true },
+  "extends": "eslint:recommended",
+  "parserOptions": { "ecmaVersion": 2022 },
+  "ignorePatterns": ["dist/", "node_modules/"],
+  "overrides": [{ "files": ["tests/**/*.js"], "env": { "es2022": true }, "globals": { "fetch": "readonly" } }]
+}
